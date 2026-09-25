@@ -1,5 +1,5 @@
 import type { ThemeMode } from "@/types/design";
-
 export function getThemeScript(mode: ThemeMode) {
-  return `(() => { try { const configured = ${JSON.stringify(mode)}; const stored = localStorage.getItem("portfolio-theme"); const preferred = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; document.documentElement.dataset.theme = stored || (configured === "system" ? preferred : configured); } catch (_) {} })();`;
+  return `(()=>{const configured=${JSON.stringify(mode)};let stored;try{stored=localStorage.getItem('portfolio-sky-theme')}catch{}document.documentElement.dataset.theme=(stored==='dark'||stored==='light')?stored:configured==='system'?(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'):configured})();`;
 }
+

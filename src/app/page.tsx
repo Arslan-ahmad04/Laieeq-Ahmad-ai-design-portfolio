@@ -1,18 +1,45 @@
-import type { CSSProperties } from "react";
-import { Footer } from "@/components/layout/Footer";
-import { Navigation } from "@/components/navigation/Navigation";
+import { profileDetails } from "@/data/profile";
 import { SectionRenderer } from "@/components/sections/SectionRenderer";
-import { designConfig } from "@/config/design.config";
 import { sectionsConfig } from "@/config/sections.config";
+import { clientConfig } from "@/config/client.config";
 import { getEnabledSections } from "@/lib/getEnabledSections";
-
+import { pageMetadata, siteOrigin } from "@/lib/seo";
+export const metadata = pageMetadata(
+  clientConfig.name + " | " + clientConfig.professionalTitle,
+  clientConfig.seo.description,
+  "/",
+);
 export default function Home() {
-  const styles = { "--accent": designConfig.colors.accent, "--accent-alt": designConfig.colors.accentAlt } as CSSProperties;
+  const person = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: clientConfig.name,
+    description: clientConfig.seo.description,
+    jobTitle: profileDetails.jobTitle,
+    email: clientConfig.contact.email,
+    telephone: clientConfig.contact.phone,
+    url: siteOrigin ?? undefined,
+    image:
+      siteOrigin && clientConfig.profileImage
+        ? siteOrigin + clientConfig.profileImage
+        : undefined,
+    sameAs: [clientConfig.contact.instagram].filter(Boolean),
+    address: {
+      "@type": "PostalAddress",
+      ...profileDetails.address,
+    },
+  };
   return (
-    <div className="site-shell" style={styles} data-nav-variant={designConfig.navigation.variant} data-nav-position={designConfig.navigation.position} data-background={designConfig.background.style} data-typography={designConfig.typography.preset} data-surface={designConfig.surface.style} data-glass={designConfig.surface.glassEnabled} data-card-style={designConfig.cards.style} data-shadow={designConfig.cards.shadow} data-radius={designConfig.radius.size} data-density={designConfig.density.preset} data-transition={designConfig.transitions.preset} data-personality={designConfig.personality}>
-      <Navigation />
-      <main className="site-main">{getEnabledSections(sectionsConfig).map((section) => <SectionRenderer key={section.id} section={section} />)}</main>
-      <Footer />
-    </div>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(person).replace(/</g, "\u003c"),
+        }}
+      />
+      {getEnabledSections(sectionsConfig).map((section) => (
+        <SectionRenderer key={section.id} section={section} />
+      ))}
+    </>
   );
 }

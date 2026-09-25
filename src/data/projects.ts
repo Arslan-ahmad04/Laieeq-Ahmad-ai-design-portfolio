@@ -1,6 +1,2 @@
 import type { ProjectItem } from "@/types/content";
-export const projects = [
-  { slug: "signal-operations", title: "Signal Operations", summary: "A calm command center for complex daily operations.", description: "A configurable operations platform that turns fragmented workflows into a clear shared picture for distributed teams.", tags: ["Next.js", "TypeScript", "Systems design"], outcome: "Reduced handoff time by 38%", href: null, featured: true },
-  { slug: "atlas-insights", title: "Atlas Insights", summary: "Decision-ready analytics without dashboard overload.", description: "An analytics product that uses progressive disclosure and opinionated defaults to make complicated performance data understandable.", tags: ["React", "Data visualization", "PostgreSQL"], outcome: "2.4× faster reporting", href: null, featured: true },
-  { slug: "relay-platform", title: "Relay Platform", summary: "A reusable launch system for service businesses.", description: "A modular platform foundation with flexible content, consistent accessibility, and an efficient editorial workflow.", tags: ["Architecture", "Design systems", "Automation"], outcome: "Launched 6 brands", href: null, featured: false },
-] satisfies readonly ProjectItem[];
+export const projects: readonly ProjectItem[] = [];

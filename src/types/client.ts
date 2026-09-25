@@ -34,6 +34,7 @@ export interface ClientConfig {
     phone: string | null;
     github: string | null;
     linkedin: string | null;
+    facebook?: string | null;
     instagram: string | null;
     behance: string | null;
     dribbble: string | null;

@@ -1,5 +1,13 @@
-export interface SkillGroup { category: string; items: readonly string[] }
-export interface ExperienceItem { period: string; role: string; company: string; summary: string }
+export interface SkillGroup {
+  category: string;
+  items: readonly string[];
+}
+export interface ExperienceItem {
+  period: string;
+  role: string;
+  company: string;
+  summary: string;
+}
 export interface ProjectItem {
   slug: string;
   title: string;
@@ -10,8 +18,46 @@ export interface ProjectItem {
   href: string | null;
   featured: boolean;
 }
-export interface ServiceItem { title: string; description: string; icon: "code" | "layers" | "sparkles" | "chart" }
-export interface PortfolioItem { slug: string; title: string; category: string; description: string }
-export interface TimelineItem { title: string; meta: string; description: string }
-export interface TestimonialItem { quote: string; name: string; role: string }
-export interface PublicationItem { title: string; publication: string; year: string; href: string | null }
+export interface ServiceItem {
+  title: string;
+  description: string;
+  icon: "code" | "layers" | "sparkles" | "chart";
+}
+export interface ArtworkImage {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  caption?: string;
+}
+export interface PortfolioItem {
+  slug: string;
+  title: string;
+  category: string;
+  description: string;
+  client: string;
+  role: string;
+  group: string;
+  process: readonly string[];
+  deliverables: readonly string[];
+  outcome: string;
+  images: readonly ArtworkImage[];
+  artworkVerified: boolean;
+  source: string;
+}
+export interface TimelineItem {
+  title: string;
+  meta: string;
+  description: string;
+}
+export interface TestimonialItem {
+  quote: string;
+  name: string;
+  role: string;
+}
+export interface PublicationItem {
+  title: string;
+  publication: string;
+  year: string;
+  href: string | null;
+}

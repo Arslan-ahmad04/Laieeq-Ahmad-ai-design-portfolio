@@ -1,6 +1,20 @@
 import type { SkillGroup } from "@/types/content";
-export const skills = [
-  { category: "Product engineering", items: ["TypeScript", "React", "Next.js", "Node.js"] },
-  { category: "Systems", items: ["API design", "PostgreSQL", "Cloud architecture", "Testing"] },
-  { category: "Ways of working", items: ["Product discovery", "Technical strategy", "Design collaboration", "Mentoring"] },
-] satisfies readonly SkillGroup[];
+export const skills: readonly SkillGroup[] = [
+  {
+    category: "Brand & Identity Design",
+    items: ["Logo Design", "Branding", "Typography"],
+  },
+  {
+    category: "Digital & Print Design",
+    items: [
+      "Poster Design",
+      "Social Media Design",
+      "Photo Editing",
+      "UI/UX Design",
+    ],
+  },
+  {
+    category: "Design Software",
+    items: ["Adobe Photoshop", "Adobe Illustrator", "Canva"],
+  },
+];

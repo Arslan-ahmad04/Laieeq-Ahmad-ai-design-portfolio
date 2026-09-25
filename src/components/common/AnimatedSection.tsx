@@ -13,7 +13,19 @@ const motionPresets = {
   technical: { y: 18, duration: 0.45 },
 } satisfies Record<AnimationPreset, { y: number; duration: number }>;
 
-export function AnimatedSection({ id, className = "", children, enabled, preset }: { id: string; className?: string; children: ReactNode; enabled: boolean; preset: AnimationPreset }) {
+export function AnimatedSection({
+  id,
+  className = "",
+  children,
+  enabled,
+  preset,
+}: {
+  id: string;
+  className?: string;
+  children: ReactNode;
+  enabled: boolean;
+  preset: AnimationPreset;
+}) {
   const reduceMotion = useReducedMotion();
   const setting = motionPresets[enabled ? preset : "none"];
   const shouldAnimate = enabled && preset !== "none" && !reduceMotion;
@@ -21,8 +33,8 @@ export function AnimatedSection({ id, className = "", children, enabled, preset 
     <motion.section
       id={id}
       className={`content-section ${className}`}
-      initial={shouldAnimate ? { opacity: 0, y: setting.y } : false}
-      whileInView={shouldAnimate ? { opacity: 1, y: 0 } : undefined}
+      initial={false}
+      whileInView={shouldAnimate ? { y: [setting.y, 0] } : undefined}
       viewport={{ once: true, amount: 0.12 }}
       transition={{ duration: setting.duration, ease: [0.22, 1, 0.36, 1] }}
     >

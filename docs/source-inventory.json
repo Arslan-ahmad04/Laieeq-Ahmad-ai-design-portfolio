@@ -1,0 +1,64 @@
+{
+  "retrieved": "2026-09-11",
+  "authority": "Supplied portfolio brief overrides reference content",
+  "pages": [
+    "https://laieeq-graphics.lovable.app/",
+    "https://laieeq-graphics.lovable.app/about",
+    "https://laieeq-graphics.lovable.app/skills",
+    "https://laieeq-graphics.lovable.app/services",
+    "https://laieeq-graphics.lovable.app/portfolio",
+    "https://laieeq-graphics.lovable.app/experience",
+    "https://laieeq-graphics.lovable.app/contact"
+  ],
+  "portrait": {
+    "source": "https://laieeq-graphics.lovable.app/assets/portrait-Cx5iYa2C.png",
+    "local": "/profile/laieeq-ahmad.png",
+    "width": 500,
+    "height": 500
+  },
+  "projects": [
+    {
+      "page": "https://laieeq-graphics.lovable.app/portfolio/kamalia-media-society",
+      "asset": "https://laieeq-graphics.lovable.app/assets/proj-media-society-DF76Dj7f.jpg",
+      "local": "/portfolio/kamalia-media-society.jpg",
+      "status": "Reference preview; original artwork unconfirmed"
+    },
+    {
+      "page": "https://laieeq-graphics.lovable.app/portfolio/kamalia-literary-society",
+      "asset": "https://laieeq-graphics.lovable.app/assets/proj-literary-Cx10VTNn.jpg",
+      "local": "/portfolio/kamalia-literary-society.jpg",
+      "status": "Reference preview; original artwork unconfirmed"
+    },
+    {
+      "page": "https://laieeq-graphics.lovable.app/portfolio/seerat-un-nabi-conference",
+      "asset": "https://laieeq-graphics.lovable.app/assets/proj-seerat-CW6XoUxN.jpg",
+      "local": "/portfolio/seerat-un-nabi-conference.jpg",
+      "status": "Reference preview; original artwork unconfirmed"
+    },
+    {
+      "page": "https://laieeq-graphics.lovable.app/portfolio/al-arab-paint-industry",
+      "asset": "https://laieeq-graphics.lovable.app/assets/proj-paint-B-NguidV.jpg",
+      "local": "/portfolio/al-arab-paint-industry.jpg",
+      "status": "Reference preview; original artwork unconfirmed"
+    },
+    {
+      "page": "https://laieeq-graphics.lovable.app/portfolio/hasnat-ahmad-khokhar-book",
+      "asset": "https://laieeq-graphics.lovable.app/assets/proj-book-Bg-OQ9zR.jpg",
+      "local": "/portfolio/hasnat-ahmad-khokhar-book.jpg",
+      "status": "Reference preview; original artwork unconfirmed"
+    },
+    {
+      "page": "https://laieeq-graphics.lovable.app/portfolio/hanbal-ahmad-spray-industry",
+      "asset": "https://laieeq-graphics.lovable.app/assets/proj-spray-Bv4IdytY.jpg",
+      "local": "/portfolio/hanbal-ahmad-spray-industry.jpg",
+      "status": "Reference preview; original artwork unconfirmed"
+    },
+    {
+      "page": "https://laieeq-graphics.lovable.app/portfolio/arslan-ahmad-state-life",
+      "asset": "https://laieeq-graphics.lovable.app/assets/proj-poster-BAs93cqx.jpg",
+      "local": "/portfolio/arslan-ahmad-state-life.jpg",
+      "status": "Reference preview; original artwork unconfirmed"
+    }
+  ],
+  "cv": "No download link found on inspected pages"
+}

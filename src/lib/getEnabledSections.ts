@@ -10,5 +10,5 @@ export function getEnabledSections(config: SectionsConfig): EnabledSection[] {
 export function getNavigationItems(config: SectionsConfig) {
   return getEnabledSections(config)
     .filter((section) => section.id !== "hero" && section.navLabel)
-    .map((section) => ({ id: section.id, label: section.navLabel!, href: `#${section.id}` }));
+    .map((section) => ({ id: section.id, label: section.navLabel!, href: section.href ?? `/#${section.id}` }));
 }

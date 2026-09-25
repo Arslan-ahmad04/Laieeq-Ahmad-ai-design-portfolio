@@ -22,6 +22,10 @@ export interface SectionConfig {
   title?: string;
   navLabel?: string;
   ctaLabel?: string;
+  href?: string;
+  eyebrow?: string;
+  intro?: string;
+  previewLimit?: number;
 }
 
 export type SectionsConfig = Record<SectionId, SectionConfig>;

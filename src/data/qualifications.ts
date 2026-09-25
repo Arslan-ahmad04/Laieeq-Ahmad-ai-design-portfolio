@@ -1,4 +1,9 @@
 import type { TimelineItem } from "@/types/content";
-export const qualifications = [
-  { title: "BSc Computer Science", meta: "University · 2020", description: "Software engineering, distributed systems, and human-computer interaction." },
-] satisfies readonly TimelineItem[];
+export const qualifications: readonly TimelineItem[] = [
+  {
+    title: "BS Artificial Intelligence",
+    meta: "University of Kamalia · September 2025–Present",
+    description:
+      "Expected graduation: 2029. Exploring the connection between technology and design alongside my graphic design practice.",
+  },
+];

@@ -1,27 +1,55 @@
 import type { SectionsConfig } from "@/types/section";
-
-/**
- * ============================================================
- * MAIN CLIENT CUSTOMIZATION FILE — WHAT APPEARS, AND WHERE
- * ============================================================
- * Safe to edit for normal client work. Toggle enabled, change order,
- * and rename titles/navigation labels without touching page JSX.
- */
-export const sectionsConfig = {
+export const sectionsConfig: SectionsConfig = {
   hero: { enabled: true, order: 1 },
-  about: { enabled: true, order: 2, title: "About", navLabel: "About" },
-  skills: { enabled: true, order: 3, title: "Capabilities", navLabel: "Skills" },
-  experience: { enabled: true, order: 4, title: "Experience", navLabel: "Experience" },
-  projects: { enabled: true, order: 5, title: "Selected projects", navLabel: "Projects", ctaLabel: "View case study" },
-  services: { enabled: false, order: 6, title: "Services", navLabel: "Services" },
-  portfolio: { enabled: false, order: 7, title: "Selected work", navLabel: "Portfolio" },
-  specializations: { enabled: false, order: 8, title: "Specializations", navLabel: "Specializations" },
-  qualifications: { enabled: false, order: 9, title: "Qualifications", navLabel: "Qualifications" },
-  certificates: { enabled: true, order: 10, title: "Credentials", navLabel: "Certificates" },
-  testimonials: { enabled: false, order: 11, title: "Kind words", navLabel: "Testimonials" },
-  clients: { enabled: false, order: 12, title: "Trusted by", navLabel: "Clients" },
-  gallery: { enabled: false, order: 13, title: "Gallery", navLabel: "Gallery" },
-  publications: { enabled: false, order: 14, title: "Publications", navLabel: "Publications" },
-  appointment: { enabled: false, order: 15, title: "Book an appointment", navLabel: "Appointment", ctaLabel: "Choose a time" },
-  contact: { enabled: true, order: 16, title: "Let’s build something useful.", navLabel: "Contact" },
-} satisfies SectionsConfig;
+  about: {
+    enabled: true,
+    order: 2,
+    title: "About Me",
+    navLabel: "About",
+    href: "/#about",
+    eyebrow: "01 / About",
+  },
+  skills: {
+    enabled: true,
+    order: 3,
+    title: "My Skills",
+    navLabel: "Skills",
+    href: "/#skills",
+    eyebrow: "02 / Skills",
+  },
+  experience: {
+    enabled: true,
+    order: 4,
+    title: "People I’ve designed for.",
+    navLabel: "Experience",
+    href: "/#experience",
+    eyebrow: "03 / Experience",
+  },
+  portfolio: {
+    enabled: true,
+    order: 5,
+    title: "Selected projects.",
+    navLabel: "Projects",
+    href: "/#portfolio",
+    eyebrow: "04 / Projects",
+  },
+  contact: {
+    enabled: true,
+    order: 6,
+    title: "Let’s make something meaningful.",
+    navLabel: "Contact",
+    href: "/#contact",
+    eyebrow: "05 / Contact",
+    intro: "Have a brand, event, or idea in mind? Let’s talk.",
+  },
+  qualifications: { enabled: false, order: 7 },
+  services: { enabled: false, order: 8 },
+  projects: { enabled: false, order: 9 },
+  specializations: { enabled: false, order: 10 },
+  certificates: { enabled: false, order: 11 },
+  testimonials: { enabled: false, order: 12 },
+  clients: { enabled: false, order: 13 },
+  gallery: { enabled: false, order: 14 },
+  publications: { enabled: false, order: 15 },
+  appointment: { enabled: false, order: 16 },
+};

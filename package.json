@@ -1,12 +1,15 @@
 {
-  "name": "multi-profession-portfolio-framework",
+  "name": "laieeq-ahmad-portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "typecheck": "next typegen && tsc --noEmit",
+    "verify:preview": "node scripts/verify-preview.mjs",
+    "test:seo": "node scripts/verify-seo.mjs"
   },
   "dependencies": {
     "geist": "^1.7.2",
@@ -27,5 +30,6 @@
     "eslint-config-next": "16.3.4",
     "tailwindcss": "^4",
     "typescript": "^5"
-  }
+  },
+  "description": "Personal portfolio of Laieeq Ahmad, an Artificial Intelligence student and graphic designer, featuring design projects, services, skills, and experience."
 }
