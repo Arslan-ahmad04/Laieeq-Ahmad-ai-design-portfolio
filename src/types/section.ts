@@ -3,17 +3,7 @@ export type SectionId =
   | "about"
   | "skills"
   | "experience"
-  | "projects"
-  | "services"
   | "portfolio"
-  | "specializations"
-  | "qualifications"
-  | "certificates"
-  | "testimonials"
-  | "clients"
-  | "gallery"
-  | "publications"
-  | "appointment"
   | "contact";
 
 export interface SectionConfig {

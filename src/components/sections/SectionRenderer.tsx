@@ -6,18 +6,6 @@ import { SingleAbout } from "@/components/single-page/AboutSection";
 import type { ComponentType } from "react";
 import type { EnabledSection, SectionId } from "@/types/section";
 import { HeroRenderer } from "@/components/hero/HeroRenderer";
-import {
-  AppointmentSection,
-  CertificatesSection,
-  ClientsSection,
-  GallerySection,
-  ProjectsSection,
-  PublicationsSection,
-  QualificationsSection,
-  ServicesSection,
-  SpecializationsSection,
-  TestimonialsSection,
-} from "./sections";
 
 type RendererProps = { section: EnabledSection };
 const sectionRegistry = {
@@ -25,17 +13,7 @@ const sectionRegistry = {
   about: SingleAbout,
   skills: SingleSkills,
   experience: SingleExperience,
-  projects: ProjectsSection,
-  services: ServicesSection,
   portfolio: SingleProjects,
-  specializations: SpecializationsSection,
-  qualifications: QualificationsSection,
-  certificates: CertificatesSection,
-  testimonials: TestimonialsSection,
-  clients: ClientsSection,
-  gallery: GallerySection,
-  publications: PublicationsSection,
-  appointment: AppointmentSection,
   contact: SingleContact,
 } satisfies Record<SectionId, ComponentType<RendererProps>>;
 export function SectionRenderer({ section }: RendererProps) {

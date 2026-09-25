@@ -8,21 +8,6 @@ export interface ExperienceItem {
   company: string;
   summary: string;
 }
-export interface ProjectItem {
-  slug: string;
-  title: string;
-  summary: string;
-  description: string;
-  tags: readonly string[];
-  outcome: string;
-  href: string | null;
-  featured: boolean;
-}
-export interface ServiceItem {
-  title: string;
-  description: string;
-  icon: "code" | "layers" | "sparkles" | "chart";
-}
 export interface ArtworkImage {
   src: string;
   alt: string;
@@ -49,15 +34,4 @@ export interface TimelineItem {
   title: string;
   meta: string;
   description: string;
-}
-export interface TestimonialItem {
-  quote: string;
-  name: string;
-  role: string;
-}
-export interface PublicationItem {
-  title: string;
-  publication: string;
-  year: string;
-  href: string | null;
 }

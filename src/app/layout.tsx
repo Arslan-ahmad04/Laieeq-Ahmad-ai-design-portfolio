@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { clientConfig } from "@/config/client.config";
-import { designConfig } from "@/config/design.config";
+
 import { SiteShell } from "@/components/layout/SiteShell";
 
 import { siteOrigin } from "@/lib/seo";
@@ -31,7 +31,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={GeistSans.variable + " " + GeistMono.variable}
-      data-theme={designConfig.theme.defaultMode === "light" ? "light" : "dark"}
+      data-theme="dark"
       data-scroll-behavior="smooth"
       suppressHydrationWarning
     >

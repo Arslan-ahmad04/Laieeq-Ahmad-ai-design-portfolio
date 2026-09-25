@@ -1,2 +1,2 @@
 export interface NavigationItem { id: string; label: string; href: string }
-export interface NavbarProps { items: readonly NavigationItem[]; position: string; sticky: boolean; allowThemeToggle: boolean }
+export interface NavbarProps { items: readonly NavigationItem[] }

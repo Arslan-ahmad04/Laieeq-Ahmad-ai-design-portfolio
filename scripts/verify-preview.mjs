@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
-const base = process.env.PREVIEW_URL || "http://127.0.0.1:3002";
+const base = process.env.PREVIEW_URL || "http://127.0.0.1:3003";
 const inventory = JSON.parse(
   await readFile(
     new URL("../docs/source-inventory.json", import.meta.url),

@@ -14,18 +14,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
     <div
       className="site-shell"
       style={styles}
-      data-nav-variant={designConfig.navigation.variant}
-      data-nav-position={designConfig.navigation.position}
-      data-background={designConfig.background.style}
-      data-typography={designConfig.typography.preset}
-      data-surface={designConfig.surface.style}
-      data-glass={designConfig.surface.glassEnabled}
-      data-card-style={designConfig.cards.style}
-      data-shadow={designConfig.cards.shadow}
-      data-radius={designConfig.radius.size}
-      data-density={designConfig.density.preset}
-      data-transition={designConfig.transitions.preset}
-      data-personality={designConfig.personality}
+      data-background="gradient"
     >
       <a className="skip-link" href="#main-content">
         Skip to content
