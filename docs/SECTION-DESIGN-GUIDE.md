@@ -4,7 +4,7 @@ The portfolio is one page, in the order shown in your sketch. Start with the Her
 
 | Section | Layout file | Content |
 | --- | --- | --- |
-| Hero | src/components/hero/HeroContent.tsx and HeroPortrait.tsx | src/config/client.config.ts and src/data/single-page.ts |
+| Hero | src/components/hero/HeroSplit.tsx | src/config/client.config.ts and src/data/single-page.ts |
 | About | src/components/single-page/AboutSection.tsx | src/data/single-page.ts |
 | Skills | src/components/single-page/SkillsSection.tsx | src/data/skills.ts |
 | Experience | src/components/single-page/ExperienceSection.tsx | src/data/experience.ts |
@@ -15,8 +15,12 @@ Shared glass panels use SectionPanel.tsx in the same directory. White, black, sk
 
 ## Navigation and theme
 
-The fixed, centered transparent navbar uses visible text links and highlights the current section while scrolling. The logo returns to the top. The site has one black-and-sky-blue theme with no toggle. Sections blend into the canvas without outer panels. The contact rail is vertically centered; social icons use brand colors on hover. LinkedIn and Facebook remain unavailable until profile URLs are configured.
+On mobile, the navbar is a floating icon-only bottom bar with safe-area clearance. On desktop, the fixed, centered transparent navbar uses visible text links and highlights the current section while scrolling. The logo returns to the top. The site has one black-and-sky-blue theme with no toggle. Sections blend into the canvas without outer panels. The contact rail is vertically centered; social icons use brand colors on hover. LinkedIn and Facebook remain unavailable until profile URLs are configured.
 
 ## Project artwork
 
 Seven images remain explicitly labeled reference previews. Expand a project for its details and click its image to open the viewer. Replace the previews with original artwork before enabling search indexing. Older section and project URLs redirect into this page.
+
+## Editorial hero
+
+The active hero is composed in HeroSplit.tsx. It preserves the name, availability, design and AI roles, location, current degree/university, portrait caption, description, and both calls to action. The oversized role title and outlined second line sit behind the centered portrait. On phones, location and education move below the portrait so information remains readable. Styling is under the Editorial hero comment in globals.css.
